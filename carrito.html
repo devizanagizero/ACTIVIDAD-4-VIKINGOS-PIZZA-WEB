@@ -1,129 +1,134 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrito Vikingos</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito - Vikingos Pizza</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
 <header class="navbar">
-    <div class="logo">
-        <img src="img/logo.png" alt="Logo Vikingos">
-    </div>
+  <div class="logo">
+    <img src="img/logo.png" alt="Logo Vikingos">
+  </div>
 
-    <nav>
-        <a href="index.html">INICIO</a>
-        <a class="active" href="menu.html">MENÚ</a>
-        <a href="promociones.html">PROMOCIONES</a>
-        <a href="nosotros.html">NOSOTROS</a>
-        <a href="contacto.html">CONTACTO</a>
-    </nav>
+  <nav>
+    <a href="index.html">INICIO</a>
+    <a class="active" href="menu.html">MENÚ</a>
+    <a href="promociones.html">PROMOCIONES</a>
+    <a href="nosotros.html">NOSOTROS</a>
+    <a href="contacto.html">CONTACTO</a>
+  </nav>
 
-    <div class="phone">
-        📞 Pídelo ahora<br>
-        <strong>300 316 35 21</strong>
-    </div>
+  <div class="phone">
+    📞 Pídelo ahora<br>
+    <strong>300 316 35 21</strong>
+  </div>
 
-    <a class="btn-orange" href="#">🛒 ORDENAR AHORA</a>
+  <a class="btn-orange" href="menu.html">🛒 ORDENAR AHORA</a>
 </header>
 
 <section class="page-title">
-    <h1>Tu <span>Carrito</span></h1>
-    <p>Revisa tu pedido antes de continuar</p>
+  <h1>Tu <span>Carrito</span></h1>
+  <p>Revisa tu pedido antes de continuar</p>
 </section>
 
-<section class="cart-container">
+<main class="carrito-page">
 
-    <div class="cart-left">
+  <section class="carrito-grid">
 
-        <div class="cart-header">
-            <div>Pedido</div>
-            <div>Precio</div>
-            <div>Cantidad</div>
-            <div>Subtotal</div>
-            <div></div>
+    <div class="carrito-lista">
+
+      <div class="carrito-header">
+        <span>Pedido</span>
+        <span>Precio</span>
+        <span>Cantidad</span>
+        <span>Subtotal</span>
+      </div>
+
+      <div class="carrito-item">
+        <img src="img/Hamburguesa.jpg" alt="Hamburguesa">
+        <div class="precio">$ 33.900</div>
+        <div class="cantidad">➖ 1 ➕</div>
+        <div class="subtotal">$ 33.900</div>
+        <div class="eliminar">🗑️</div>
+      </div>
+
+      <div class="carrito-item">
+        <img src="img/banner.jpg" alt="Pizza">
+        <div class="precio">$ 19.900</div>
+        <div class="cantidad">➖ 1 ➕</div>
+        <div class="subtotal">$ 19.900</div>
+        <div class="eliminar">🗑️</div>
+      </div>
+
+      <div class="carrito-item">
+        <img src="img/bebidas.jpg.png" alt="Bebida">
+        <div class="precio">$ 6.000</div>
+        <div class="cantidad">➖ 2 ➕</div>
+        <div class="subtotal">$ 12.000</div>
+        <div class="eliminar">🗑️</div>
+      </div>
+
+      <div class="carrito-bottom">
+        <a href="menu.html" class="btn-outline">← SEGUIR COMPRANDO</a>
+
+        <div class="domicilio-info">
+          🛵 <strong>Domicilio en Bogotá</strong><br>
+          Puente Aranda<br>
+          Tiempo estimado: 30 - 45 min.
         </div>
 
-        <div class="cart-item">
-            <img src="img/carrito-hamburguesa.jpg" alt="Hamburguesa">
-            <div>$ 33.900</div>
-            <div class="quantity">
-                <button>-</button>
-                <span>1</span>
-                <button>+</button>
-            </div>
-            <div>$ 33.900</div>
-            <button class="delete-btn">🗑️</button>
-        </div>
-
-        <div class="cart-item">
-            <img src="img/carrito-pizza.jpg" alt="Pizza">
-            <div>$ 19.900</div>
-            <div class="quantity">
-                <button>-</button>
-                <span>1</span>
-                <button>+</button>
-            </div>
-            <div>$ 19.900</div>
-            <button class="delete-btn">🗑️</button>
-        </div>
-
-        <div class="cart-item">
-            <img src="img/carrito-bebida.png" alt="Bebida">
-            <div>$ 6.000</div>
-            <div class="quantity">
-                <button>-</button>
-                <span>2</span>
-                <button>+</button>
-            </div>
-            <div>$ 12.000</div>
-            <button class="delete-btn">🗑️</button>
-        </div>
-
-        <div class="cart-actions">
-            <a href="menu.html" class="continue-btn">← SEGUIR COMPRANDO</a>
-
-            <div class="delivery-info">
-                🛵 Domicilio en Bogotá Puente Aranda<br>
-                <small>Tiempo estimado: 30 - 45 min.</small>
-            </div>
-
-            <button class="address-btn">Cambiar Dirección</button>
-        </div>
+        <button class="btn-change">Cambiar Dirección</button>
+      </div>
 
     </div>
 
-    <div class="cart-summary">
-        <h3>Resumen del pedido</h3>
+    <aside class="carrito-resumen">
+      <h2>Resumen del pedido</h2>
 
-        <p>Subtotal <span>$ 65.800</span></p>
-        <p>Domicilio <span>$ 3.500</span></p>
-        <p>Descuento <span class="green">- $ 2.000</span></p>
+      <div class="price-line">
+        <span>Subtotal</span>
+        <strong>$ 65800</strong>
+      </div>
 
-        <hr>
+      <div class="price-line">
+        <span>Domicilio</span>
+        <strong>$ 3500</strong>
+      </div>
 
-        <h2>Total <span>$ 67.000</span></h2>
+      <div class="price-line discount">
+        <span>Descuento</span>
+        <strong>- $2000</strong>
+      </div>
 
-        <div class="address-box">
-            📍 Dirección de entrega<br>
-            Bogotá, Puente Aranda
-        </div>
+      <div class="price-total">
+        <span>Total</span>
+        <strong>$ 67.000</strong>
+      </div>
 
-        <a href="checkout.html" class="checkout-btn">Finalizar pedido</a>
+      <div class="delivery-box">
+        📍 Dirección de entrega<br>
+        Bogotá, Puente Aranda, Cundinamarca
+      </div>
 
-        <small>Pago 100% seguro</small>
-    </div>
+      <a href="checkout.html" class="btn-confirm">🔥 Finalizar pedido</a>
 
-</section>
+      <p class="seguro">Pago 100% seguro</p>
+    </aside>
+
+  </section>
+
+</main>
 
 <footer>
-    <div>🛵 DOMICILIOS RÁPIDOS</div>
-    <div>🥇 INGREDIENTES FRESCOS</div>
-    <div>🛡️ PAGOS SEGUROS</div>
-    <div>🕒 HORARIO DE ATENCIÓN</div>
+  <div>🛵 <strong>DOMICILIOS RÁPIDOS</strong><br>llegamos hasta tu puerta</div>
+  <div>🥇 <strong>INGREDIENTES FRESCOS</strong><br>Calidad en cada producto</div>
+  <div>🛡️ <strong>PAGOS SEGUROS</strong><br>Tu compra 100% segura</div>
+  <div>🕒 <strong>HORARIO DE ATENCIÓN</strong><br>Lun - Dom: 11:00am - 11:00pm</div>
 </footer>
 
+<script src="js/script.js"></script>
 </body>
 </html>
