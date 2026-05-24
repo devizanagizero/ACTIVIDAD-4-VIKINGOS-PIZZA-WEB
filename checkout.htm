@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finalizar pedido - Vikingos Pizza</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">
+    <img src="img/logo.png" alt="Logo Vikingos">
+  </div>
+
+  <nav>
+    <a href="index.html">INICIO</a>
+    <a class="active" href="menu.html">MENÚ</a>
+    <a href="promociones.html">PROMOCIONES</a>
+    <a href="nosotros.html">NOSOTROS</a>
+    <a href="contacto.html">CONTACTO</a>
+  </nav>
+
+  <div class="phone">📞 Pídelo ahora<br><strong>300 316 35 21</strong></div>
+  <a class="btn-orange" href="menu.html">🛒 ORDENAR AHORA</a>
+</header>
+
+<section class="page-title">
+  <h1>FINALIZAR <span>PEDIDO</span></h1>
+  <p>Completa los datos para recibir tu pedido</p>
+</section>
+
+<section class="steps">
+  <div>🛒 <strong>1. CARRITO</strong></div>
+  <div class="active-step">📋 <strong>2. DATOS</strong></div>
+  <div>💳 <strong>3. PAGO</strong></div>
+  <div>✅ <strong>4. CONFIRMACIÓN</strong></div>
+</section>
+
+<main class="checkout-container">
+
+  <section class="checkout-form">
+    <h2>📍 DATOS DE ENTREGA</h2>
+
+    <form>
+      <div class="form-row">
+        <div>
+          <label>Nombre completo *</label>
+          <input type="text" placeholder="Ej. Juan Pérez">
+        </div>
+
+        <div>
+          <label>Teléfono / WhatsApp *</label>
+          <input type="text" placeholder="Ej. 300 123 4567">
+        </div>
+      </div>
+
+      <label>Dirección de entrega *</label>
+      <input type="text" placeholder="Ej. Cra 7 # 12-45, Soacha Compartir">
+
+      <div class="form-row">
+        <div>
+          <label>Barrio / Sector *</label>
+          <select>
+            <option>Selecciona tu barrio</option>
+            <option>Soacha Compartir</option>
+            <option>Ciudad Verde</option>
+            <option>San Mateo</option>
+          </select>
+        </div>
+
+        <div>
+          <label>Punto de referencia *</label>
+          <input type="text" placeholder="Frente al parque, casa blanca...">
+        </div>
+      </div>
+
+      <label>Observaciones opcional</label>
+      <textarea placeholder="Ej. Sin cebolla, timbrar dos veces, llamar antes..."></textarea>
+
+      <h3>MÉTODO DE PAGO</h3>
+
+      <div class="payment-options">
+        <label><input type="radio" name="pago"> Efectivo</label>
+        <label><input type="radio" name="pago"> Nequi / Daviplata</label>
+        <label><input type="radio" name="pago"> Tarjeta contra entrega</label>
+        <label><input type="radio" name="pago" checked> PSE</label>
+      </div>
+
+      <div class="checkout-buttons">
+        <a href="carrito.html" class="btn-outline">Regresar</a>
+      </div>
+    </form>
+  </section>
+
+  <aside class="order-summary">
+    <h2>Resumen de tu pedido</h2>
+
+    <div class="summary-item">
+      <img src="img/Hamburguesa.jpg" alt="Hamburguesa">
+      <div>
+        <strong>Hamburguesa Vikinga</strong>
+        <p>Mediana</p>
+      </div>
+      <span>$33.900</span>
+    </div>
+
+    <div class="summary-item">
+      <img src="img/banner.jpg" alt="Pizza">
+      <div>
+        <strong>Pizza Vikinga</strong>
+        <p>Mediana</p>
+      </div>
+      <span>$19.900</span>
+    </div>
+
+    <div class="summary-item">
+      <img src="img/bebidas.jpg.png" alt="Bebida">
+      <div>
+        <strong>Coca-Cola</strong>
+        <p>1.25 L</p>
+      </div>
+      <span>$12.000</span>
+    </div>
+
+    <hr>
+
+    <div class="price-line"><span>Subtotal</span><strong>$65.000</strong></div>
+    <div class="price-line"><span>Domicilio</span><strong>$3.500</strong></div>
+    <div class="price-line discount"><span>Descuento</span><strong>- $2.000</strong></div>
+    <div class="price-total"><span>TOTAL A PAGAR</span><strong>$67.300</strong></div>
+
+    <div class="delivery-box">
+      🛵 <strong>Domicilio en Bogotá</strong><br>
+      Tiempo estimado: 30 - 45 min.
+    </div>
+
+    <a href="confirmacion.html" class="btn-confirm">✅ Confirmar pedido</a>
+  </aside>
+
+</main>
+
+<footer>
+  <div>🛵 <strong>DOMICILIOS RÁPIDOS</strong><br>llegamos hasta tu puerta</div>
+  <div>🥇 <strong>INGREDIENTES FRESCOS</strong><br>Calidad en cada producto</div>
+  <div>🛡️ <strong>PAGOS SEGUROS</strong><br>Tu compra 100% segura</div>
+  <div>🕒 <strong>HORARIO DE ATENCIÓN</strong><br>Lun - Dom: 11:00am - 11:00pm</div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

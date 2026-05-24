@@ -9,26 +9,27 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* NAVBAR */
 .navbar {
   width: 100%;
-  height: 90px;
+  height: 85px;
   background: #050505;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 0 40px;
+  padding: 0 45px;
   border-bottom: 3px solid #f97316;
 }
 
 .logo img {
-  width: 75px;
+  width: 80px;
 }
 
 .navbar nav a {
   color: white;
   text-decoration: none;
-  margin: 0 14px;
-  font-size: 13px;
+  margin: 0 18px;
+  font-size: 14px;
   font-weight: bold;
 }
 
@@ -66,6 +67,7 @@ body {
   display: inline-block;
 }
 
+/* HOME */
 .home-hero {
   min-height: 470px;
   background: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.55)), url("../img/banner.jpg");
@@ -159,21 +161,228 @@ body {
   margin: 10px auto;
 }
 
+/* TITULOS PAGINAS */
+.page-title {
+  background: linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)), url("../img/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 45px 20px;
+}
+
+.page-title h1 {
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.page-title span {
+  color: #f97316;
+}
+
+.page-title p {
+  margin-top: 10px;
+  color: #ddd;
+}
+
+/* CHECKOUT PASOS */
+.steps {
+  background: white;
+  margin: 35px auto;
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border: 2px solid #2ea3ff;
+  padding: 20px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.steps div {
+  color: #111;
+}
+
+.steps .active-step {
+  color: #f97316;
+}
+
+/* CHECKOUT CONTENEDOR */
+.checkout-container {
+  background: white;
+  width: 95%;
+  margin: 0 auto 45px;
+  display: grid;
+  grid-template-columns: 2.3fr 1fr;
+  gap: 25px;
+  padding: 35px;
+}
+
+/* FORMULARIO */
+.checkout-form {
+  border: 2px solid #333;
+  padding: 35px;
+}
+
+.checkout-form h2 {
+  color: #111;
+  margin-bottom: 28px;
+  font-size: 30px;
+}
+
+.checkout-form label {
+  display: block;
+  font-weight: bold;
+  font-size: 13px;
+  margin: 12px 0 5px;
+}
+
+.checkout-form input,
+.checkout-form select,
+.checkout-form textarea {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #999;
+  border-radius: 25px;
+  outline: none;
+  font-size: 14px;
+}
+
+.checkout-form textarea {
+  height: 75px;
+  resize: none;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+/* PAGOS */
+.payment-options {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.payment-options label {
+  border: 1px solid #ddd;
+  padding: 14px;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+.btn-outline {
+  display: inline-block;
+  margin-top: 25px;
+  border: 2px solid #f97316;
+  color: #111;
+  text-decoration: none;
+  padding: 13px 45px;
+  font-weight: bold;
+}
+
+/* RESUMEN PEDIDO */
+.order-summary {
+  background: #2a0d00;
+  color: white;
+  padding: 28px;
+  border-radius: 20px;
+  border: 3px solid #111;
+}
+
+.order-summary h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.summary-item {
+  display: grid;
+  grid-template-columns: 55px 1fr auto;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 15px;
+  background: white;
+  color: #111;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.summary-item img {
+  width: 50px;
+  height: 45px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.summary-item p {
+  font-size: 12px;
+  color: #555;
+}
+
+.summary-item span {
+  color: #f97316;
+  font-weight: bold;
+}
+
+.price-line,
+.price-total {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+}
+
+.discount strong {
+  color: #22c55e;
+}
+
+.price-total {
+  color: #f97316;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.delivery-box {
+  background: #fff3e6;
+  color: #111;
+  padding: 15px;
+  border-radius: 15px;
+  margin: 20px 0;
+  border: 1px solid #f97316;
+}
+
+.btn-confirm {
+  display: block;
+  text-align: center;
+  background: #f97316;
+  color: white;
+  text-decoration: none;
+  padding: 18px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* FOOTER */
 footer {
   background: #050505;
   color: white;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  padding: 18px 40px;
+  gap: 25px;
+  padding: 22px 45px;
   border-top: 3px solid #f97316;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 footer strong {
   color: white;
 }
 
+/* RESPONSIVE */
 @media (max-width: 900px) {
   .navbar {
     height: auto;
@@ -204,5 +413,399 @@ footer strong {
   footer {
     grid-template-columns: 1fr;
     text-align: center;
+  }
+
+  .checkout-container {
+    grid-template-columns: 1fr;
+  }
+
+  .steps {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .form-row,
+  .payment-options {
+    grid-template-columns: 1fr;
+  }
+}
+
+.confirmacion-page {
+  background: white;
+  padding: 25px 55px 35px;
+}
+
+.success-area {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+  text-align: center;
+}
+
+.star {
+  color: #f97316;
+  font-size: 70px;
+  -webkit-text-stroke: 2px #111;
+}
+
+.check-icon {
+  width: 90px;
+  height: 90px;
+  background: #22c55e;
+  color: white;
+  border-radius: 50%;
+  font-size: 70px;
+  line-height: 90px;
+  margin: 0 auto 15px;
+  font-weight: bold;
+}
+
+.success-message h2 {
+  font-size: 28px;
+  font-weight: 900;
+  color: #111;
+}
+
+.success-message span {
+  color: #f97316;
+}
+
+.success-message p {
+  margin-top: 28px;
+  color: #111;
+}
+
+.confirmacion-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1.5fr 1.1fr;
+  gap: 25px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.pedido-card {
+  border: 2px solid #999;
+  border-radius: 30px;
+  padding: 25px;
+  min-height: 260px;
+}
+
+.pedido-card h3 {
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.ticket {
+  background: #ffe2b7;
+  padding: 20px;
+  border-radius: 15px;
+  font-size: 14px;
+}
+
+.orange {
+  color: #f97316;
+  font-weight: bold;
+}
+
+.resumen-confirmacion {
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  padding: 18px;
+}
+
+.estado-pedido {
+  background: #777;
+  border-radius: 45px;
+  padding: 20px;
+}
+
+.estado-box {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  gap: 12px;
+  padding: 18px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  color: #111;
+  font-size: 13px;
+}
+
+.green {
+  background: #86efac;
+}
+
+.orange-box {
+  background: #fdba74;
+}
+
+.blue {
+  background: #bae6fd;
+}
+
+.confirmacion-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.big {
+  padding: 16px 35px;
+  font-size: 15px;
+}
+
+@media (max-width: 900px) {
+  .success-area,
+  .confirmacion-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .confirmacion-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+/* CONTACTO AJUSTADO TIPO FIGMA */
+.contacto-page.compacto {
+  background: #050505;
+  color: white;
+  padding: 15px 35px 20px;
+}
+
+.contacto-title {
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.contacto-title h1 {
+  font-size: 42px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.contacto-title h1 span,
+.contacto-title h2 span {
+  color: #f97316;
+}
+
+.contacto-title h2 {
+  font-size: 22px;
+  line-height: 1.05;
+  font-weight: 900;
+}
+
+.contacto-title h2::after {
+  display: none;
+}
+
+.contacto-grid.compacto-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  max-width: 1180px;
+  margin: auto;
+}
+
+.contact-form-box,
+.contact-info-box {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+}
+
+.contact-form-box h3,
+.medios-contacto h3,
+.mapa-box h3,
+.redes-box h3 {
+  color: white;
+  margin-bottom: 5px;
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.contact-form-box h3::after,
+.medios-contacto h3::after,
+.mapa-box h3::after,
+.redes-box h3::after {
+  content: "";
+  display: block;
+  width: 45px;
+  height: 2px;
+  background: #f97316;
+  margin-top: 4px;
+}
+
+.contact-form-box p {
+  margin-bottom: 8px;
+  color: #ddd;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.contact-form-box label {
+  display: block;
+  margin: 8px 0 4px;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.contact-form-box input,
+.contact-form-box select,
+.contact-form-box textarea {
+  width: 100%;
+  padding: 8px 10px;
+  background: #111;
+  border: 1px solid #333;
+  border-radius: 3px;
+  color: white;
+  font-size: 12px;
+}
+
+.contact-form-box textarea {
+  height: 70px;
+  resize: none;
+}
+
+.contact-form-box small {
+  display: block;
+  margin: 8px 0;
+  color: #ccc;
+  font-size: 11px;
+}
+
+.btn-send {
+  width: 70%;
+  background: #f97316;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.horario-box {
+  margin-top: 12px;
+  border: 2px solid #2ea3ff;
+  display: flex;
+  gap: 12px;
+  padding: 13px;
+  align-items: center;
+  max-width: 360px;
+}
+
+.icon-large {
+  font-size: 35px;
+  color: #f97316;
+}
+
+.horario-box h4 {
+  font-size: 13px;
+}
+
+.horario-box p {
+  margin: 2px 0;
+  font-size: 11px;
+  color: white;
+}
+
+.horario-box strong {
+  color: #f97316;
+  font-size: 18px;
+}
+
+.medios-contacto {
+  margin-bottom: 12px;
+}
+
+.contact-item {
+  display: grid;
+  grid-template-columns: 38px 1fr;
+  gap: 10px;
+  padding: 7px 0;
+  border-bottom: 1px solid #333;
+}
+
+.contact-item span {
+  font-size: 26px;
+}
+
+.contact-item strong {
+  font-size: 13px;
+}
+
+.contact-item p {
+  color: #f97316;
+  font-weight: bold;
+  margin: 1px 0;
+  font-size: 16px;
+}
+
+.contact-item small {
+  color: #ddd;
+  font-size: 11px;
+}
+
+.mapa-box {
+  margin: 10px 0;
+}
+
+.mapa-falso {
+  height: 135px;
+  background: #e5e5e5;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  font-size: 14px;
+  margin: 8px 0;
+}
+
+.mapa-btn {
+  text-align: center;
+  width: 210px;
+  padding: 10px;
+  font-size: 12px;
+}
+
+.redes-box {
+  margin-top: 14px;
+  background: #111;
+  padding: 12px;
+  border-radius: 4px;
+}
+
+.redes-box p {
+  color: #ddd;
+  margin-bottom: 10px;
+  font-size: 11px;
+}
+
+.redes-icons {
+  display: flex;
+  gap: 18px;
+}
+
+.redes-icons span {
+  width: 42px;
+  height: 42px;
+  background: #f97316;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+}
+
+@media (max-width: 900px) {
+  .contacto-grid.compacto-grid {
+    grid-template-columns: 1fr;
   }
 }
