@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito Vikingos</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">
+        <img src="img/logo.png" alt="Logo Vikingos">
+    </div>
+
+    <nav>
+        <a href="index.html">INICIO</a>
+        <a class="active" href="menu.html">MENÚ</a>
+        <a href="promociones.html">PROMOCIONES</a>
+        <a href="nosotros.html">NOSOTROS</a>
+        <a href="contacto.html">CONTACTO</a>
+    </nav>
+
+    <div class="phone">
+        📞 Pídelo ahora<br>
+        <strong>300 316 35 21</strong>
+    </div>
+
+    <a class="btn-orange" href="#">🛒 ORDENAR AHORA</a>
+</header>
+
+<section class="page-title">
+    <h1>Tu <span>Carrito</span></h1>
+    <p>Revisa tu pedido antes de continuar</p>
+</section>
+
+<section class="cart-container">
+
+    <div class="cart-left">
+
+        <div class="cart-header">
+            <div>Pedido</div>
+            <div>Precio</div>
+            <div>Cantidad</div>
+            <div>Subtotal</div>
+            <div></div>
+        </div>
+
+        <div class="cart-item">
+            <img src="img/carrito-hamburguesa.jpg" alt="Hamburguesa">
+            <div>$ 33.900</div>
+            <div class="quantity">
+                <button>-</button>
+                <span>1</span>
+                <button>+</button>
+            </div>
+            <div>$ 33.900</div>
+            <button class="delete-btn">🗑️</button>
+        </div>
+
+        <div class="cart-item">
+            <img src="img/carrito-pizza.jpg" alt="Pizza">
+            <div>$ 19.900</div>
+            <div class="quantity">
+                <button>-</button>
+                <span>1</span>
+                <button>+</button>
+            </div>
+            <div>$ 19.900</div>
+            <button class="delete-btn">🗑️</button>
+        </div>
+
+        <div class="cart-item">
+            <img src="img/carrito-bebida.png" alt="Bebida">
+            <div>$ 6.000</div>
+            <div class="quantity">
+                <button>-</button>
+                <span>2</span>
+                <button>+</button>
+            </div>
+            <div>$ 12.000</div>
+            <button class="delete-btn">🗑️</button>
+        </div>
+
+        <div class="cart-actions">
+            <a href="menu.html" class="continue-btn">← SEGUIR COMPRANDO</a>
+
+            <div class="delivery-info">
+                🛵 Domicilio en Bogotá Puente Aranda<br>
+                <small>Tiempo estimado: 30 - 45 min.</small>
+            </div>
+
+            <button class="address-btn">Cambiar Dirección</button>
+        </div>
+
+    </div>
+
+    <div class="cart-summary">
+        <h3>Resumen del pedido</h3>
+
+        <p>Subtotal <span>$ 65.800</span></p>
+        <p>Domicilio <span>$ 3.500</span></p>
+        <p>Descuento <span class="green">- $ 2.000</span></p>
+
+        <hr>
+
+        <h2>Total <span>$ 67.000</span></h2>
+
+        <div class="address-box">
+            📍 Dirección de entrega<br>
+            Bogotá, Puente Aranda
+        </div>
+
+        <a href="checkout.html" class="checkout-btn">Finalizar pedido</a>
+
+        <small>Pago 100% seguro</small>
+    </div>
+
+</section>
+
+<footer>
+    <div>🛵 DOMICILIOS RÁPIDOS</div>
+    <div>🥇 INGREDIENTES FRESCOS</div>
+    <div>🛡️ PAGOS SEGUROS</div>
+    <div>🕒 HORARIO DE ATENCIÓN</div>
+</footer>
+
+</body>
+</html>
